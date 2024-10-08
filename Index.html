@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAX50 Setup Guide</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <header>
+        <h1>RAX50 Initial Setup Guide</h1>
+    </header>
+    <main>
+        <h2>Follow the steps below to set up your RAX50 Router:</h2>
+        <form id="setup-form">
+            <div>
+                <label for="powerLed">Is the Power LED ON?</label>
+                <select id="powerLed">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="internetLed">Is the Internet LED ON?</label>
+                <select id="internetLed">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="wifiLed">Are the 2.4 and 5 GHz LEDs ON?</label>
+                <select id="wifiLed">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </div>
+
+            <button type="button" onclick="checkSetup()">Check Setup</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 RAX50 Setup Guide</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
